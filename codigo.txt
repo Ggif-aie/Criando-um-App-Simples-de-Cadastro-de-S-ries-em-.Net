@@ -1,0 +1,22 @@
+CREATE Database bancodetestes;
+USE bancodetestes;
+
+CREATE TABLE fornecedores(
+Codigo int (4) AUTO_INCREMENT,
+nome varchar (40) NOT NULL,
+Email VARCHAR(50),
+primary key (Codigo)
+);
+
+INSERT INTO fornecedores (codigo,nome, email) VALUES (null," Mario","ma.@gmail.com");
+INSERT INTO fornecedores (codigo,nome, email) VALUES (null, "josep@gmail.com");
+INSERT INTO fornecedores (codigo,nome, email) VALUES (null, "paula_@gmail.com");
+INSERT INTO fornecedores (codigo,nome, email) VALUES (null, "Mari-@gmail.com");
+INSERT INTO fornecedores (codigo,nome, email) VALUES (null, "vagner.@gmail.com");
+INSERT INTO fornecedores (codigo,nome, email) VALUES (null, "Ricardo_@gmail.com");
+INSERT INTO fornecedores (codigo,nome, email) VALUES (null, "Pedro-@gmail.com");
+INSERT INTO fornecedores (codigo,nome, email) VALUES (null, "ana.@gmail.com");
+
+Select * from fornecedores;
+Select email from fornecedores;
+Select * From  fornecedores Order by nome asc;
